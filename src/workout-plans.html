@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness App</title>
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <h1>Fitness App</h1>
+    </header>
+
+    <ul class="sub-page" id="workout-plans">
+      <li class="has-submenu">
+        <a href="./add-workout-plan.html">Add Workout Plan</a>
+        <ul class="sub-page" id="add-workout-plan">
+          <li><a href="#">Select/Deselect Exercises</a></li>
+          <li><a href="#">Edit Sequence</a></li>
+        </ul>
+      </li>
+      <li class="has-submenu">
+        <a href="#">Show Grid List</a>
+        <ul class="sub-page" id="show-grid-list">
+          <li class="has-submenu">
+            <a href="#">Selected Workout Plan</a>
+            <ul class="sub-page" id="selected-workout-plan">
+              <li><a href="#">Add/Delete Exercises</a></li>
+              <li><a href="#">Reorganize Exercises</a></li>
+              <li><a href="#">Delete Workout Plan</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <footer>
+      <p>&copy; 2024 Fitness App</p>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuItems = document.querySelectorAll(".has-submenu");
+
+        menuItems.forEach((item) => {
+          item.addEventListener("click", function () {
+            const subPageId = this.querySelector("ul.sub-page").id;
+            const subPage = document.getElementById(subPageId);
+
+            if (subPage.style.display === "block") {
+              subPage.style.display = "none";
+            } else {
+              subPage.style.display = "block";
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
