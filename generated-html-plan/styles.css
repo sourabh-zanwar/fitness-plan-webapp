@@ -61,6 +61,10 @@ p {
 }
 
 a {
-  color: #f0f0f0;
   text-decoration: none;
+  color: inherit;
+}
+
+.whitecolor {
+  color: #f0f0f0;
 }
