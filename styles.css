@@ -12,9 +12,10 @@ body {
 }
 
 header {
-  background-color: #1e90ff; /* Dodger Blue */
+  background-color: #52959b; /* Dodger Blue */
   color: #fff;
-  padding: 20px 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
   text-align: center;
 }
 
