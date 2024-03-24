@@ -13,7 +13,7 @@ if [ $? -eq 0 ]; then
         git commit -m "Automated commit after running Python script"
 
         # Push changes to GitHub
-        git push origin master
+        git push origin main
     else
         echo "No changes detected. Nothing to commit."
     fi
