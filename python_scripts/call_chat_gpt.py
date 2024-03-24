@@ -109,7 +109,7 @@ def perform_llm_tasks():
                 .choices[0]
                 .message.content.strip()
             )
-            if df["name"][i]:
+            if type(df["name"][i]) == str:
                 title_sent = f"# Workout for {df['name'][i].title()}" + "\n\n"
                 response2 = title_sent + response2
             md_content = markdown.markdown(response2, extensions=["markdown.extensions.tables"])
