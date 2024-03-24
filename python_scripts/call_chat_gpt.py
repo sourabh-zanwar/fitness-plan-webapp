@@ -118,7 +118,7 @@ def perform_llm_tasks():
                 f.write(pre_text + md_content + post_text)
             completed_ids.append((df['id'][i], df['random_chars'][i]))
             log+=f"Generation for {df['random_chars'][i]} ended at {datetime.now()}"
-            log+='--------------------------------------------\n'
+            log+='\n--------------------------------------------\n'
             
     log += f"Processing with LLMs ended at {datetime.now()}\n"
     log+="=====================================================\n"

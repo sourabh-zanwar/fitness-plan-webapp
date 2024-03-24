@@ -5,7 +5,7 @@ from datetime import datetime
 
 
 def process_google_sheet():
-    log = ''
+    log = "=====================================================\n"
     log += f"Downloading and Processing Google Sheets at {datetime.now()}\n"
     url = 'https://docs.google.com/spreadsheets/d/1C1gcxQGkV0OP2Y-okwJb-J4gjv_1dLiAJOoceSoKwhQ/edit?usp=sharing'
     
